@@ -1,0 +1,184 @@
+body {   
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #2e7d32, #1b5e20);
+    color: white;  
+    padding: 40px 20px;   
+    text-align: center;
+
+.motto {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.circle {
+    width: 40px;   /* change size if needed */
+    height: 40px;
+    border-radius: 50%;
+}
+/* Decals - full setup */
+.decals img {
+    width: 160px;      /* size of the decals - change this number to make 
+bigger/smaller */
+    height: auto;      /* keeps proportions correct */
+    position: fixed;   /* sticks them to the page corners */
+    top: 20px;         /* distance from top of page */
+    z-index: 1;        /* ensures they don’t cover other content */
+}
+
+.decals .left {
+    left: 20px;        /* distance from left edge */
+}
+
+.decals .right {
+    right: 20px;       /* distance from right edge */
+}
+
+
+
+
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; 
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.rating {
+    font-size: 1.2em;
+    margin-top: 10px; 
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    color: #2e7d32;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.services, .certs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* larger 
+columns */
+    gap: 20px;
+    justify-items: center; /* center images in the grid */
+}
+
+.gallery div img {
+    width: 100%;      /* fill the grid cell */
+    max-width: 400px; /* maximum size for large screens */
+    height: auto;     /* maintain aspect ratio */
+    display: block;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.contact {
+    background-color: #e8f5e9;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.founder-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0; /* ensures square */
+    display: block;
+    margin: 20px auto;
+}
+

@@ -1,0 +1,141 @@
+/* ===================================
+   Global Enhancements
+=================================== */
+* {
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Link styling */
+a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph and heading spacing */
+p {
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+/* ===================================
+   Header Enhancements
+=================================== */
+header p {
+    color: #e0f2f1; /* slightly lighter for gradient background */
+}
+
+.rating {
+    color: #fff176; /* gold-ish color for star rating */
+    font-weight: 600;
+}
+
+/* Buttons */
+button, .btn {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* ===================================
+   Sections and Layout
+=================================== */
+section {
+    scroll-margin-top: 80px; /* smooth scroll offset */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+    animation-delay: 0.3s;
+}
+
+section + section {
+    border-top: 1px solid #e0e0e0; /* subtle divider */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
+   Cards and Grid
+=================================== */
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Optional gradient header text in cards */
+.card h3 {
+    background: linear-gradient(120deg, #2e7d32, #1b5e20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Grid layouts */
+.services, .certs, .gallery {
+    display: grid;
+    gap: 20px;
+}
+
+.services, .certs {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+/* ===================================
+   Gallery Images
+=================================== */
+.gallery div img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+}
+
+.gallery div img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===================================
+   Footer
+=================================== */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #555;
+    font-size: 0.9rem;
+    background-color: #f5f7f6;
+    border-top: 1px solid #e0e0e0;
+}
+

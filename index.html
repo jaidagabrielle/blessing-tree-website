@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blessing Tree Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="polish.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+
+    <h1>Blessing Tree Service</h1>
+    <p>Family-Operated</p>
+    <p>"We're Not Out To Beat You But To Bless You"</p>
+
+    <div class="rating">★★★★★</div>
+    <div class="motto">"No Job Too Big Or Small"</div>
+    <div class="estimate">"You Can't Afford Not To Get A Free 
+Estimate"</div>
+
+
+<div class="decals">
+    <img src="png.png" class="circle left" alt="Left decal">
+    <img src="png.png" class="circle right" alt="Right decal">
+</div>
+
+
+
+</header>
+
+
+
+
+</header>
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+    <img class="slides" src="tree1.jpg" alt="Tree 1">
+    <img class="slides" src="tree2.jpg" alt="Tree 2">
+    <img class="slides" src="tree3.jpg" alt="Tree 3">
+
+
+</div>
+
+<!-- About Us Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        A Blessing Tree Service provides a wide range of tree care 
+services for residential and commercial clients throughout Solano County. 
+The company has the training and equipment to handle everything from 
+routine pruning and shaping to complete tree removal, and it also performs 
+stump grinding and chipping for the convenience of its customers.
+    </p>
+    <p>
+        Owner David Benjamin attributes much of A Blessing Tree Service’s 
+success to its customer-oriented approach to tree work. “We’re 
+professional from start to finish and we put our hearts into everything 
+that we do,” he affirms. “The size and cost of the project doesn’t matter 
+to us—we treat each customer with respect and always put their 
+satisfaction first.”
+    </p>
+    <p>
+        A Blessing Tree Service prioritizes quality control in every 
+aspect of its operations, which Mr. Benjamin says is the key to ensuring 
+positive results. “Before we start working on a tree, we do a 
+comprehensive survey of what we’re going to do and make sure our plan is 
+carried out from beginning to end. That type of attention to detail allows 
+us to perform a quality job every time.”
+    </p>
+</section>
+
+
+
+
+
+<section id="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery">
+        <div><img src="tree4.jpg" alt="Tree 4"></div>
+        <div><img src="tree5.jpg" alt="Tree 5"></div>
+    </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<!-- Founder Photo / Contact Info -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="founder-photo">
+        <img src="founder.jpg" alt="Owner David Benjamin">
+    <p class="founder-name">David Benjamin</p>    
+</div>
+    <p>Phone: 707-980-0423</p>
+    <p>Email: blessingtreeservice@yahoo.com</p>
+    <p>Hours: Monday - Friday, 7am to 5pm</p>
+    <p>Emergency Services Available: Weekends and Afterhours</p>
+
+
+
+
+<!-- Services Section -->
+<section id="services">
+    <h2>Main Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Hauling</h3>
+            <ul>
+                <li>Dirt Hauling</li>
+                <li>Furniture Removal Service</li>
+                <li>Hauling Containers</li>
+                <li>Junk Hauling</li>
+                <li>Junk Removal Service</li>
+                <li>Mattress Haul Away</li>
+                <li>Rock Hauling</li>
+                <li>Trash Hauling</li>
+                <li>Waste Hauling</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Tree Service</h3>
+            <ul>
+                <li>Crown Lifting</li>
+                <li>Land Clearing</li>
+                <li>Shrub Trimming</li>
+                <li>Stump Grinding</li>
+                <li>Stump Removal</li>
+                <li>Tree Care</li>
+                <li>Tree Cutting</li>
+                <li>Tree Maintenance</li>
+                <li>Tree Pruning</li>
+                <li>Tree Removal</li>
+                <li>Tree Root Removal</li>
+                <li>Tree Trimming</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Additional Services</h3>
+            <ul>
+                <li>Tree Pruning, Topping and Shaping</li>
+                <li>Tree Removal</li>
+                <li>Building and Property Line Clearance</li>
+                <li>Tree Thinning and Weight Reduction</li>
+                <li>Chipping and Stump Grinding</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Service Area -->
+<section id="service-area">
+    <h2>Service Area</h2>
+    <p>
+        Solano County — Vallejo, Fairfield, Vacaville, Suisun City, 
+Benicia, Dixon,
+        Green Valley, and Martinez
+    </p>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 A Blessing Tree Service. All Rights Reserved.
+</footer>
+
+<!-- Slideshow Script -->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1;}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html>
+
